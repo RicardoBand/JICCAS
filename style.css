@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #272323;
+    color: #ffffff;
+    font-family: 'Arial', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    background-color: #646363;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.topo h2 {
+    font-size: 20px;
+}
+
+.menuTopo {
+    overflow: hidden;
+    background-color: #3700ff;
+    text-align: center;
+    position: sticky;
+    top: 10px;
+}
+
+.menuTopo ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuTopo ul li {
+    float: left;
+}
+
+.menuTopo a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+    background-color: #00e1ff;
+    margin: 0 2px;
+    border-radius: 3px;
+}
+
+.menuTopo a:hover {
+    background-color: #00a2ff;
+    color: black;
+    font-weight: bold;
+}
+
+.corpo:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.corpo {
+    width: 1024px;
+    margin: 10px auto;
+}
+
+.esquerda {
+    width: 75%;
+    float: left;
+}
+
+.direita {
+    width: 25%;
+    float: right;
+}
+
+.destaque{
+    background-color: #3700ff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #3700ff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1028px) {
+
+    .esquerda,
+    .direita {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .corpo {
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .menuTopo ul li,
+    .menuTopo a {
+        float: none;
+        width: 100%;
+    }
+
+}
